@@ -6,14 +6,16 @@ const sidebarWrapper = document.querySelector('.sidebar-wrapper')
 const toggleSidebar = document.querySelector('.toggleSidebar')
 const openSidebar = document.querySelector('.openSidebar')
 
-toggleSidebar.addEventListener('click',function(){
-  sidebarWrapper.classList.remove('d-lg-flex')
-  openSidebar.classList.remove('d-none')
-})
-openSidebar.addEventListener('click',function(){
-  sidebarWrapper.classList.add('d-lg-flex')
-  openSidebar.classList.add('d-none')
-})
+if(toggleSidebar){
+  toggleSidebar.addEventListener('click',function(){
+    sidebarWrapper.classList.remove('d-lg-flex')
+    openSidebar.classList.remove('d-none')
+  })
+  openSidebar.addEventListener('click',function(){
+    sidebarWrapper.classList.add('d-lg-flex')
+    openSidebar.classList.add('d-none')
+  })
+}
 
 btnToggleMenu.addEventListener('click',function () {
   menuMobile.classList.add('show')
