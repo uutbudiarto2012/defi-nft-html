@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/slick/slick.css">
+    <link rel="stylesheet" href="/assets/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>NFT Deficandy</title>
+  </head>
+  <body>
+    <section class="_navbar sticky-top">
+      <div class="container-fluid">
+        <div class="_navbar-main_nav">
+          <div class="left">
+            <a href="index.html" class="_logo-brand">
+              <img src="/assets/images/logo/logo.svg" alt="" class="logo-img" />
+              <!-- <span class="logo-text">NFT Deficandy</span> -->
+            </a>
+          </div>
+          <div class="center d-none d-lg-flex">
+            <div class="search-container">
+              <div class="search-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <input type="text" class="search-input" placeholder="Search..." />
+            </div>
+            <ul class="menus">
+              <li class="menu active">
+                <a href="asset.html" class="menu-link">Explore</a>
+              </li>
+              <li class="menu">
+                <a href="stats.html" class="menu-link">Stats</a>
+              </li>
+              <li class="menu">
+                <a href="resourses.html" class="menu-link">Resources</a>
+              </li>
+              <li class="menu">
+                <a href="create.html" class="menu-link">Create</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menuMobile d-flex d-lg-none">
+              <div class="header">
+                <img class="logoSidebav" src="/assets/images/logo/logo.svg" alt="">
+                <button class="closeSidenav">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="body">
+                <ul class="menus">
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-compass"></i>
+                    Explore
+                    </a>
+                  </li>
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-chart-bar"></i>
+                    Stats
+                    </a>
+                  </li>
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-file-alt"></i>
+                    Resources
+                    </a>
+                  </li>
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    Create
+                    </a>
+                  </li>
+                </ul>
+                <div class="text-center mt-5 px-5">
+                  <button class="m-connect-wallet">
+                    Connect Wallet
+                  </button>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="social">
+                  <div class="social-item">
+                    <i class="fab fa-telegram"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-discord"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-reddit"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="right">
+            <div class="utils d-none d-md-flex">
+              <div class="profile">
+                <a href="" class="con-profile">
+                  <i class="fas fa-user"></i>
+                </a>
+              </div>
+              <div class="wallet">
+                <a href="" class="con-wallet">
+                  <i class="fas fa-wallet"></i>
+                </a>
+              </div>
+              <div class="mode">
+                <a href="/#" class="con-mode">
+                  <i class="fas fa-lightbulb"></i>
+                </a>
+              </div>
+            </div>
+            <button class="btnToggleMenu d-lg-none">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_content">
+      <div class="openSidebar d-none">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 d-none d-lg-flex sidebar-wrapper">
+            <div class="sidebar">
+              <div class="header">
+                <div class="title">
+                  <i class="fas fa-sort me-3"></i>
+                  <span>Filter</span>
+                </div>
+                <div class="toggleSidebar">
+                  <i class="fas fa-arrow-left"></i>
+                </div>
+              </div>
+              <div class="body">
+                <div class="fliter-type">
+                  <h6 class="title">Price</h6>
+                  <div class="filter-wrapper">
+                    <input type="text" class="custom-input" placeholder="from" />
+                    <input type="text" class="custom-input" placeholder="to" />
+                  </div>
+                  <button class="btn-custom-primary">Apply</button>
+                </div>
+                <div class="fliter-type">
+                  <h6 class="title">Categories</h6>
+                  <div class="filter-wrapper">
+                    <a href="#" class="caterory-item">
+                      <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                      </div>
+                      <span>Arts</span>
+                    </a>
+                  </div>
+                  <div class="filter-wrapper">
+                    <a href="#" class="caterory-item">
+                      <div class="icon">
+                        <i class="fas fa-music"></i>
+                      </div>
+                      <span>Music</span>
+                    </a>
+                  </div>
+                  <div class="filter-wrapper">
+                    <a href="#" class="caterory-item">
+                      <div class="icon">
+                        <i class="fas fa-server"></i>
+                      </div>
+                      <span>Domaun Names</span>
+                    </a>
+                  </div>
+                  <div class="filter-wrapper">
+                    <a href="#" class="caterory-item">
+                      <div class="icon">
+                        <i class="fas fa-futbol"></i>
+                      </div>
+                      <span>Sports</span>
+                    </a>
+                  </div>
+                  <div class="filter-wrapper">
+                    <a href="#" class="caterory-item">
+                      <div class="icon">
+                        <i class="fas fa-window-restore"></i>
+                      </div>
+                      <span>Utility</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/2.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/1.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/3.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/1.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/2.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/3.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/2.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/1.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/3.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/1.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/2.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-4 col-md-4 col-6">
+                <div class="card-asset">
+                  <a href="#" class="image-wrapper">
+                    <img src="/assets/images/items/3.png" class="image-item" alt="">
+                  </a>
+                  <div class="body">
+                    <a href="#" class="left">
+                      <div class="username">
+                        <span class="name">Rumble Kon League</span>
+                        <div class="isVerified">
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="item-name">Kong#009</div>
+                    </a>
+                    <div class="right">
+                      <span class="price-item">Price</span>
+                      <div class="price-value">
+                        <i class="fab fa-ethereum"></i>
+                        <span>237</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer">
+                    <a href="#" class="btn-buy">Buy Now</a>
+                    <div class="right">
+                      <i class="far fa-heart"></i>
+                      <span class="like-count">
+                        200
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="_copyrigt">
+      <div class="text-center py-3 text-muted">© 2018 - 2021 Ozone Networks, Inc</div>
+    </section> -->
+
+
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/slick/slick.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>

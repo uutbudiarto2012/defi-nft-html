@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/slick/slick.css">
+    <link rel="stylesheet" href="/assets/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>NFT Deficandy</title>
+  </head>
+  <body>
+    <section class="_navbar sticky-top">
+      <div class="container-fluid">
+        <div class="_navbar-main_nav">
+          <div class="left">
+            <div class="_logo-brand">
+              <img src="/assets/images/logo/logo.svg" alt="" class="logo-img" />
+              <!-- <span class="logo-text">NFT Deficandy</span> -->
+            </div>
+          </div>
+          <div class="center d-none d-lg-flex">
+            <div class="search-container">
+              <div class="search-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <input type="text" class="search-input" placeholder="Search..." />
+            </div>
+            <ul class="menus">
+              <li class="menu">
+                <a href="asset.html" class="menu-link">Explore</a>
+              </li>
+              <li class="menu">
+                <a href="stats.html" class="menu-link">Stats</a>
+              </li>
+              <li class="menu">
+                <a href="resourses.html" class="menu-link">Resources</a>
+              </li>
+              <li class="menu">
+                <a href="create.html" class="menu-link">Create</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menuMobile d-flex d-lg-none">
+              <div class="header">
+                <img class="logoSidebav" src="/assets/images/logo/logo.svg" alt="">
+                <button class="closeSidenav">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="body">
+                <ul class="menus">
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-compass"></i>
+                    Explore
+                    </a>
+                  </li>
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-chart-bar"></i>
+                    Stats
+                    </a>
+                  </li>
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-file-alt"></i>
+                    Resources
+                    </a>
+                  </li>
+                  <li class="menu">
+                    <a href="#" class="menu-link">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    Create
+                    </a>
+                  </li>
+                </ul>
+                <div class="text-center mt-5 px-5">
+                  <button class="m-connect-wallet">
+                    Connect Wallet
+                  </button>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="social">
+                  <div class="social-item">
+                    <i class="fab fa-telegram"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-discord"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-reddit"></i>
+                  </div>
+                  <div class="social-item">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="right">
+            <div class="utils d-none d-md-flex">
+              <div class="profile">
+                <a href="" class="con-profile">
+                  <i class="fas fa-user"></i>
+                </a>
+              </div>
+              <div class="wallet">
+                <a href="" class="con-wallet">
+                  <i class="fas fa-wallet"></i>
+                </a>
+              </div>
+              <div class="mode">
+                <a href="/#" class="con-mode">
+                  <i class="fas fa-lightbulb"></i>
+                </a>
+              </div>
+            </div>
+            <button class="btnToggleMenu d-lg-none">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_hero">
+      <div class="container-fluid">
+        <div class="_hero-wrapper">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5">
+              <div class="text-container">
+                <h1 class="title">
+                  Discover, collect, and sell extraordinary NFTs
+                </h1>
+                <p class="desc">
+                  on the world's first & largest NFT marketplace
+                </p>
+                <div class="action-container">
+                  <a href="#" class="btn btn-explore">Explore</a>
+                  <a href="#" class="btn btn-create">Create</a>
+                </div>
+                <a href="#meet-defi" class="about-link">
+                  <i class="fas fa-play-circle"></i>
+                  Learn about Defy NFT
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card-hero">
+                <div class="image-container">
+                  <img class="image-thumbnail" src="/assets/images/hero/1.png" alt="">
+                </div>
+                <div class="footer">
+                  <div class="info">
+                    <img class="avatar" src="/assets/images/avatar/1.png" alt="">
+                    <div class="account">
+                      <div class="account-info">
+                        <h5>My Natural Painting#01</h5>
+                        <a href="" class="go-account">Joe S</a>
+                      </div>
+                    </div>
+                    <a href="#" class="tooltips">
+                      <i class="fas fa-info-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_notable">
+      <div class="container-lg">
+        <h2 class="title-wrapper">Notable Drops</h2>
+        <div class="_notable-wrapper">
+
+          <div class="card-wrapper">
+            <a href="#" class="card-notable">
+              <div class="image-wrapper">
+                <img src="/assets/images/items/1.png" class="thumbnail" alt="">
+              </div>
+              <div class="info-wrapper">
+                <h2 class="title">Lorem, ipsum dolor.</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <span class="btn-live">Live</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="card-wrapper">
+            <a href="#" class="card-notable">
+              <div class="image-wrapper">
+                <img src="/assets/images/items/2.png" class="thumbnail" alt="">
+              </div>
+              <div class="info-wrapper">
+                <h2 class="title">Lorem, ipsum dolor.</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <span class="btn-live">Live</span>
+              </div>
+            </a>
+          </div>
+
+         <div class="card-wrapper">
+          <a href="#" class="card-notable">
+            <div class="image-wrapper">
+              <img src="/assets/images/items/3.png" class="thumbnail" alt="">
+            </div>
+            <div class="info-wrapper">
+              <h2 class="title">Lorem, ipsum dolor.</h2>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <span class="btn-live">Live</span>
+            </div>
+          </a>
+         </div>
+
+         <div class="card-wrapper">
+          <a href="#" class="card-notable">
+            <div class="image-wrapper">
+              <img src="/assets/images/items/4.png" class="thumbnail" alt="">
+            </div>
+            <div class="info-wrapper">
+              <h2 class="title">Lorem, ipsum dolor.</h2>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <span class="btn-live">Live</span>
+            </div>
+          </a>
+         </div>
+
+        <div class="card-wrapper">
+          <a href="#" class="card-notable">
+            <div class="image-wrapper">
+              <img src="/assets/images/items/5.png" class="thumbnail" alt="">
+            </div>
+            <div class="info-wrapper">
+              <h2 class="title">Lorem, ipsum dolor.</h2>
+              <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <span class="btn-live">Live</span>
+            </div>
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="_top-collection-over">
+      <div class="container-xl">
+        <div class="d-flex justify-content-between">
+          <h3 class="title-wrapper me-3">Top collections over</h3>
+          <div class="dropdown dropstart time-filter">
+            <button class="dropdown-toggle" data-bs-toggle="dropdown">
+              Filter
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="javascript:void(0)">last 24 hours</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">last 7 days</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">last 30 days</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="list-wrapper">
+          <div class="lists">
+            <a href="#" class="list-item">
+              <div class="num">1</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/2.png" alt="" class="avatar">
+                <img src="/assets/images/_ic_verified.svg" alt="" class="isTrusted">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">2</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/1.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">3</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/3.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">4</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/2.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">5</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/1.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">6</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/3.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">7</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/2.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">8</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/1.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">9</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/3.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">10</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/2.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">11</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/1.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+            <a href="#" class="list-item">
+              <div class="num">12</div>
+              <div class="avatar-box">
+                <img src="/assets/images/avatar/3.png" alt="" class="avatar">
+              </div>
+              <div class="info">
+                <h5 class="name">CryptoPunks</h5>
+                <span class="price">
+                  <i class="fas fa-gem"></i>
+                  230.989
+                </span>
+              </div>
+              <div class="percent">
+                +126.88%
+              </div>
+            </a>
+          </div>
+          <div class="text-center my-3">
+            <button class="btn-to-range">Go to Range</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_trand-category">
+      <div class="container-xl">
+        <div class="d-flex justify-content-between">
+          <h3 class="title-wrapper me-3">Top collections over</h3>
+          <div class="dropdown dropstart time-filter">
+            <button class="dropdown-toggle" data-bs-toggle="dropdown">
+              Categories
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <div class="icon-box">
+                    <i class="fas fa-paint-brush"></i>
+                  </div>
+                  <span>Art</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <div class="icon-box">
+                    <i class="fas fa-music"></i>
+                  </div>
+                  <span>Music</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <div class="icon-box">
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <span>Domain Names</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <div class="icon-box">
+                    <i class="fas fa-futbol"></i>
+                  </div>
+                  <span>Sports</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card-popular">
+              <a href="#" class="image-wrapper">
+                <img class="thumbnail" src="/assets/images/items/2.png" alt="">
+              </a>
+              <div class="info">
+                <img src="/assets/images/avatar/3.png" alt="" class="avatar">
+                <span class="catalog-name">Chain Runner</span>
+                <small class="username">By : <a href="#">ASH-GG</a></small>
+              </div>
+              <div class="desc">
+                The Red Village is a brutal dark fantasy play-to-earn blockchain game on the Polygon network.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card-popular">
+              <a href="#" class="image-wrapper">
+                <img class="thumbnail" src="/assets/images/items/1.png" alt="">
+              </a>
+              <div class="info">
+                <img src="/assets/images/avatar/3.png" alt="" class="avatar">
+                <span class="catalog-name">Chain Runner</span>
+                <small class="username">By : <a href="#">ASH-GG</a></small>
+              </div>
+              <div class="desc">
+                The Red Village is a brutal dark fantasy play-to-earn blockchain game on the Polygon network.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card-popular">
+              <a href="#" class="image-wrapper">
+                <img class="thumbnail" src="/assets/images/items/3.png" alt="">
+              </a>
+              <div class="info">
+                <img src="/assets/images/avatar/2.png" alt="" class="avatar">
+                <span class="catalog-name">Chain Runner</span>
+                <small class="username">By : <a href="#">ASH-GG</a></small>
+              </div>
+              <div class="desc">
+                The Red Village is a brutal dark fantasy play-to-earn blockchain game on the Polygon network.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="card-popular">
+              <a href="#" class="image-wrapper">
+                <img class="thumbnail" src="/assets/images/items/1.png" alt="">
+              </a>
+              <div class="info">
+                <img src="/assets/images/avatar/1.png" alt="" class="avatar">
+                <span class="catalog-name">Chain Runner</span>
+                <small class="username">By : <a href="#">ASH-GG</a></small>
+              </div>
+              <div class="desc">
+                The Red Village is a brutal dark fantasy play-to-earn blockchain game on the Polygon network.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_main-category">
+      <div class="container">
+        <h2 class="title-wrapper">Browse by category</h2>
+        <div class="row">
+          <div class="col-lg-4 col-6">
+            <a href="#" class="card-category">
+              <div class="img-wrapper">
+                <img src="/assets/images/categories/art.png" alt="" class="image">
+              </div>
+              <div class="text-wrapper">
+                <div class="icon-box">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h2 class="name">Art</h2>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="card-category">
+              <div class="img-wrapper">
+                <img src="/assets/images/categories/music.png" alt="" class="image">
+              </div>
+              <div class="text-wrapper">
+                <div class="icon-box">
+                  <i class="fas fa-music"></i>
+                </div>
+                <h2 class="name">Music</h2>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="card-category">
+              <div class="img-wrapper">
+                <img src="/assets/images/categories/domain-names.png" alt="" class="image">
+              </div>
+              <div class="text-wrapper">
+                <div class="icon-box">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h2 class="name">Domain Name</h2>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="card-category">
+              <div class="img-wrapper">
+                <img src="/assets/images/categories/sports.png" alt="" class="image">
+              </div>
+              <div class="text-wrapper">
+                <div class="icon-box">
+                  <i class="fas fa-futbol"></i>
+                </div>
+                <h2 class="name">Sports</h2>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="card-category">
+              <div class="img-wrapper">
+                <img src="/assets/images/categories/utility.png" alt="" class="image">
+              </div>
+              <div class="text-wrapper">
+                <div class="icon-box">
+                  <i class="fas fa-window-restore "></i>
+                </div>
+                <h2 class="name">Utility</h2>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="card-category">
+              <div class="img-wrapper">
+                <img src="/assets/images/categories/all-nfts.png" alt="" class="image">
+              </div>
+              <div class="text-wrapper">
+                <div class="icon-box">
+                  <i class="fas fa-th-large"></i>
+                </div>
+                <h2 class="name">All NFTs</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_meet-defi" id="meet-defi">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="container">
+        <h2 class="title-wrapper">Meet NFT Deficandy</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="ratio ratio-16x9">
+              <video class="img-fluid" src="/assets/videos/1.mp4" controls />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_partner">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-2 col-3 text-center">
+            <div class="item">
+              <img class="image" src="/assets/images/partners/coinbase.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-2 col-3 text-center">
+            <div class="item">
+              <img class="image" src="/assets/images/partners/blockchain.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-2 col-3 text-center">
+            <div class="item">
+              <img class="image" src="/assets/images/partners/combinator.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-2 col-3 text-center">
+            <div class="item">
+              <img class="image" src="/assets/images/partners/trust-wallet.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="_comunity">
+      <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 mb-5">
+              <div class="title">
+                Stay in the loop
+              </div>
+              <p>
+                Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating Deficandy.
+              </p>
+              <div class="subsc-container">
+                <div class="mail-container">
+                  <input type="text" class="mail-input">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <button type="button" class="mail-button">
+                  Sign up
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-5 mb-5">
+              <div class="title">
+                Join The Community
+              </div>
+              <div class="socials">
+                <a href="#" class="social-item">
+                  <div class="icon"><i class="fab fa-twitter"></i></div>
+                </a>
+                <a href="#" class="social-item">
+                  <div class="icon"><i class="fab fa-instagram"></i></div>
+                </a>
+                <a href="#" class="social-item">
+                  <div class="icon"><i class="fab fa-discord"></i></div>
+                </a>
+                <a href="#" class="social-item">
+                  <div class="icon"><i class="fab fa-youtube"></i></div>
+                </a>
+                <a href="#" class="social-item">
+                  <div class="icon"><i class="fab fa-telegram"></i></div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="_footer">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4">
+            <div class="logo-footer">
+              <img src="/assets/images/logo/logo-footer.svg" class="logo-img" alt="">
+            </div>
+            <p class="desc">
+              The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.              
+            </p>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="title-footer">Marketplace</div>
+            <div class="links">
+              <a href="#" class="link-footer">Art</a>
+              <a href="#" class="link-footer">Music</a>
+              <a href="#" class="link-footer">Domain Names</a>
+              <a href="#" class="link-footer">Sports</a>
+              <a href="#" class="link-footer">Utility</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="title-footer">My Account</div>
+            <div class="links">
+              <a href="#" class="link-footer">Profile</a>
+              <a href="#" class="link-footer">Favorites</a>
+              <a href="#" class="link-footer">My Collections</a>
+              <a href="#" class="link-footer">Settings</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="title-footer">Reasources</div>
+            <div class="links">
+              <a href="#" class="link-footer">Help Center</a>
+              <a href="#" class="link-footer">Platform Status</a>
+              <a href="#" class="link-footer">Partners</a>
+              <a href="#" class="link-footer">Newsletter</a>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="_copyrigt">
+      <div class="text-center py-3 text-muted">© 2018 - 2021 Ozone Networks, Inc</div>
+    </section>
+
+
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/slick/slick.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
