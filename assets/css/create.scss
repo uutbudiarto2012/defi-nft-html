@@ -1,0 +1,36 @@
+._create{
+  padding: 20px 0;
+  .title{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .sub-title{
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .rule-info{
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.item-media{
+  input{
+    opacity: 0;
+  }
+  .preview-container{
+    height: 260px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed var(--color-dark);
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    padding: 10px;
+    &:hover{
+      background-color: rgba(238, 238, 255, 0.616);
+    }
+  }
+}

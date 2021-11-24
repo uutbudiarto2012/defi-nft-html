@@ -38,13 +38,13 @@
               <li class="menu">
                 <a href="asset.html" class="menu-link">Explore</a>
               </li>
-              <li class="menu active">
-                <a href="stats.html" class="menu-link">Stats</a>
+              <li class="menu">
+                <a href="rankings.html" class="menu-link">Stats</a>
               </li>
               <li class="menu">
                 <a href="resourses.html" class="menu-link">Resources</a>
               </li>
-              <li class="menu">
+              <li class="menu active">
                 <a href="create.html" class="menu-link">Create</a>
               </li>
             </ul>
@@ -134,9 +134,43 @@
         </div>
       </div>
     </section>
-    <section class="_stats">
+    <section class="_create">
       <div class="container">
-        OK
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="create-container">
+              <div class="title-container">
+                <h1 class="title">Create new item</h1>
+                <h2 class="sub-title">Image, Video, Audio, or 3D Model <sup class="text-danger">*</sup></h2>
+                <span class="rule-info">File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB</span>
+              </div>
+              <div class="form-container">
+                <label for="media" class="item-media mb-3">
+                  <input type="file" name="" id="media">
+                  <div class="preview-container">
+                    <img src="/assets/images/_ic_media.svg" alt="">
+                  </div>
+                </label>
+                <div class="form-group mb-3">
+                  <label for="" class="input-label">Name <sup>*</sup></label>
+                  <input class="form-control form-control-lg custom-input" />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="">External Link</label>
+                  <small class="d-block">Deficandy will include a link to this URL on this item's detail page, so that users can click to learn more about it. You are welcome to link to your own webpage with more details.</small>
+                  <input class="form-control form-control-lg custom-input" />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="">Description</label>
+                  <small class="d-block">
+                    The description will be included on the item's detail page underneath its image. Markdown syntax is supported.
+                  </small>
+                  <textarea rows="3" class="form-control form-control-lg custom-input"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="/assets/js/jquery.js"></script>

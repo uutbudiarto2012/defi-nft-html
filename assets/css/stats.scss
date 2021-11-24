@@ -1,3 +1,58 @@
 ._stats{
   padding: 20px 0;
+  .table-container{
+    .tr-custom{
+      vertical-align: middle;
+      font-weight: 600;
+      border-top: 1px solid var(--color-secondary);
+    }
+   .coll-container{
+     display: flex;
+     align-items: center;
+     .num{
+       min-width: 20px;
+       font-weight: 600;
+       font-size: 14px;
+       margin-right: 10px;
+     }
+     .av-container  {
+      position: relative;
+       .avatar{
+         width: 40px;
+         height: 40px;
+         object-fit: cover;
+         border-radius: 50%;
+         margin-right: 10px;
+       }
+       .isTrust{
+         width: 12px;
+         height: 12px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         position: absolute;
+         right: 5px;
+         bottom: 5px;
+         img{
+           width: 12px;
+           height: 12px;
+           border-radius: 50%;
+         }
+       }
+     }
+     .username{
+       font-weight: 600;
+     }
+   }
+  }
+}
+.form-select{
+  &.custom-select{
+    border: 1px solid var(--color-dark);
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+  }
 }

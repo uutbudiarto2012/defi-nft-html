@@ -1,5 +1,6 @@
 @import url("./content.css");
 @import url("./stats.css");
+@import url("./create.css");
 :root {
   --color-dark: #07305f;
   --color-primary: #5a08ac;

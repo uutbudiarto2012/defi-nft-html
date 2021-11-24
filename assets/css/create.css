@@ -1,0 +1,47 @@
+._create {
+  padding: 20px 0;
+}
+
+._create .title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+._create .sub-title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+._create .rule-info {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.item-media input {
+  opacity: 0;
+}
+
+.item-media .preview-container {
+  height: 260px;
+  width: 300px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px dashed var(--color-dark);
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  padding: 10px;
+}
+
+.item-media .preview-container:hover {
+  background-color: rgba(238, 238, 255, 0.616);
+}
+/*# sourceMappingURL=create.css.map */
